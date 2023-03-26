@@ -182,3 +182,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#Google docs
+.tmp.driveupload
+.tmp.drivedownload
