@@ -19,7 +19,8 @@ Due to the large size of the dataset and hardware limitations, the focus of this
 Dataset used can be found here: [G2Net Gravitational Wave Detection Data](https://www.kaggle.com/competitions/g2net-gravitational-wave-detection/data)
 ## Data Preparation
 
-The initial step involves loading the data files in batches into memory. The data files are then subjected to a noise reduction process to mitigate as much noise as possible. The resultant filtered data files are utilized to generate Constant Q-transform spectrograms. These spectrograms are the foundation for training our machine-learning models, enabling them to discern gravitational wave signals from the noise.
+The initial step involves loading the data files in batches into memory. The data files are then subjected to a noise reduction process. To mitigate as much noise as possible. The resultant filtered data files are utilized to generate Constant Q-transform spectrograms. 
 
+## Data Preparation
 
-
+These spectrograms are the foundation for training our machine-learning model. The **Convolutional Neural Network architecture Mobilenetv2** was fine-tuned on the preprocessed data and used to classify the spectrograms.
